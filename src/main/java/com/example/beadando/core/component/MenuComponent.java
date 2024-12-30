@@ -9,11 +9,11 @@ public class MenuComponent extends HorizontalLayout {
     public MenuComponent() {
         Anchor bookLink = new Anchor();
         bookLink.setHref("/carmanager");
-        bookLink.setText("Books");
+        bookLink.setText("Cars");
 
         Anchor authorLink = new Anchor();
         authorLink.setHref("/manufacturermanager");
-        authorLink.setText("Authors");
+        authorLink.setText("Manufacturers");
         add(bookLink, authorLink);
 
         if (SecurityUtils.isAdmin()) {
